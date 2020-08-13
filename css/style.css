@@ -1,0 +1,100 @@
+html {
+    box-sizing: border-box;
+}
+
+::after, ::before {
+    box-sizing: inherit;
+}
+
+.container {
+    background: rgb(253, 253, 253);
+    max-width: 960px;
+    padding: 30px;
+    margin: 10px auto;
+    color: rgb(58, 58, 58);
+    overflow-x: auto;
+    font-family: Lato;
+}
+
+.naglowek {
+    color: whitesmoke;
+    background-color: #00d8d6;
+    font-family: 'Pacifico', cursive;
+    margin: 10px;
+    padding: 20px;
+}
+
+.profileImages {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px 1px #959696;
+}
+
+.yellowBackground {
+    background: #fcd746;
+}
+
+.changeBackground {
+    color: #f53b57;
+    background-color: #34e7e4;
+}
+
+.darkBackground {
+    background: rgb(78, 78, 78);
+}
+
+.przycisk {
+    background-color: rgb(255, 225, 55);
+    color: rgb(255, 0, 119);
+    inline-size: 40;
+    ruby-overhang: 30;
+}
+
+.przycisk2 {
+    color: rgb(255, 0, 119);
+    background-color: yellowgreen;
+}
+
+.subElement {
+    max-width: 300px;
+    background: yellowgreen;
+    text-align: center;
+    border: 2px solid rgb(51, 153, 85);
+    border-radius: 5% 5%;
+    padding: 30px;
+    margin: 20px 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px 0px #7FFFEB;
+    text-shadow: 0.5px 0.5px rgb(99, 94, 86);
+    line-height: 1.5;
+}
+
+.subElement:hover {
+    background: khaki;
+    color: deeppink;
+    font-family: sans-serif;
+}
+
+.orderedList {
+    list-style-type: decimal-leading-zero;
+}
+
+.buttonMotyw {
+    background: rgb(64, 62, 62);
+    color: azure;
+    box-shadow: 2px 3px 8px black;
+    padding: 10px 10px;
+    font-family: Lato;
+    margin: 10px;
+}
+
+.footer {
+    background: rgb(3, 209, 164);
+    text-align: center;
+    padding: 30px;
+    color: rgb(247, 247, 247);
+}
+
+.oMnie {
+    padding: 20px;
+}

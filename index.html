@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pauliczczi</title>
+    <script defer src="js/script.js"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    
+
+</head>
+
+<body class="container">
+    <div class="allPage">
+
+        <button class="buttonMotyw">
+            Włącz ciemny motyw
+        </button>
+        <section class="section" id="home">
+        <header class="header">
+            <h1 class="naglowek">Pauliczczi</h1>
+        </header><br>
+
+        <nav class="nav">
+            <ul>
+                <li class="nav__listItem nav__unorderedList"> <a class="nav__link" href="#o-mnie">O mnie</a></li>
+                <li class="nav__listItem nav__unorderedList"><a class="nav__link" href="#a-Ty?">A Ty?</a></li>
+                <li class="nav__listItem nav__unorderedList"><a class="nav__link" href="#moje-osiagniecia">Moje
+                        osiągnięcia</a></li>
+                <li class="nav__listItem nav__unorderedList"> <a class="nav__link" href="#box">Coś dziwnego</a></li>
+                <li class="nav__listItem nav__unorderedList"> <a class="nav__link" href="#tabela">Tabela</a></li>
+            </ul>
+
+
+
+        </nav>
+    </section>
+        <mian>
+            <section class="section" id="o-mnie">
+                <h2 class="scetion__h2">O mnie</h2>
+                <table class="oMnie">
+
+                    <tr>
+                        <td class="oMnie">
+                            <img src="images/ja.jpg" width="400" alt="joga" class="profileImages">
+
+                        </td>
+                        <td class="oMnie">
+                            <p class="section__paragraph"><span class="ciekawe"> </span><br>
+                                Mam wiele zaintersowań, przez co często robię kilka rzeczy na raz. Zaintersowania, które
+                                ostatnio rozwijam to <strong>frontend</strong> oraz
+                                <strong>joga</strong>!
+                            </p>
+                            <em>Walczę </em>o uprawnienia instruktora jogi, ale zamiast ćwiczyć, siedzę przed kompem i
+                            tworzę
+                            stronę o
+                            mnie...🤷‍♀ <br>
+                        </td>
+                    </tr>
+                </table>
+                <a class="nav__link nav__link--up" href="#home">Do góry</a>
+            </section>
+            <br>
+            <section class="section" id="a-Ty?">
+                <h2 class="scetion__h2">A Ty?</h2>
+
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">Teraz Ty napisz coś o sobie: </legend>
+                    <form class="form" action="https://postman-echo.com/post" method="POST"
+                        enctype="multipart/form-data">
+                        <p>
+                            Pola wymagane oznaczone są gwiazdką.<br>
+                            <label><span class="form__labelText">Czy chcesz napisać co nieco o sobie? </span><input
+                                    class="form__field" name="czyChcesz" placeholder="Bardzo!" readonly></label>
+                        </p>
+                        <label><span class="form__labelText">Jak masz na imię?* </span><input class="form__field form_name"
+                                name="name" placeholder="Wpisz swoje imię" minlength="3" required></label>
+                        </p>
+                        <p>
+                            <label><span class="form__labelText " >Napisz coś o sobie:</span> <textarea
+                                    class="form__labelText form__field--textArea" name="description" cols="30" rows="5">  </textarea></label>
+                        </p>
+
+
+                        <legend><span class="form__labelText">Które miejsce polecisz do odwiedzenia?</span> </legend>
+
+
+
+                        <ul>
+                            <li class="nav__unorderedList">
+                                <label><input class="form_places_1" type="checkbox" name="SriLanka" vaule="Sri Lanka"> Sri
+                                    Lanka</label>
+                            </li>
+                            <li class="nav__unorderedList">
+                                <label><input class="form_places_2" type="checkbox" name="Londyn" value="London">
+                                    Londyn</label>
+                            <li class="nav__unorderedList">
+                                <label><input  class="form_places_3" type="checkbox" name="Madera" value="Madera">
+                                    Madera</label>
+                            </li>
+                            </li>
+                        </ul>
+
+
+
+
+                        <legend><span class="form__labelText">Co byś wolał?</span></legend>
+                        <ul>
+                            <li class="nav__unorderedList">
+                                <label>
+                                    <input  type="radio" name="wolalby" value="slimaka"> Zjeść ślimaka
+
+                                </label> </li>
+                            <li class="nav__unorderedList">
+                                <label>
+                                    <input type="radio" name="wolalby" value="osmiornica"> Zjeść
+                                    ośmiornicę
+
+                                </label> </li>
+
+                        </ul>
+
+                        <legend><span class="form__labelText">Co oglądasz?</span></legend>
+                        <p>
+                            <label><span class="form__labelText">Co widziałeś na Netfilxie i polecasz?</span>
+                                <select name="netflix" class="form__field--select">
+                                    <option value="DomZPapieru">Dom z papieru</option>
+                                    <option value="Jak zostałem gangsterem">Jak zostałem gangsterem</option>
+                                    <option value="13Powodow">13 powodów</option>
+                                    <option value="365dni">365 dni</option>
+                                </select></label></p>
+                        </select>
+                        <legend>Prześlij swoje zdjęcie</legend>
+                        <p>
+                            <label>
+                                <span class="form__labelText"> Załącz fotkę:</span>
+
+                            </label>
+                            <input class="form__field" type="file" name="foto">
+                        </p>
+                        <p>
+                            <legend>
+                                Jak się z Tobą skontaktować?
+                            </legend>
+                            <label><span class="form__labelText"> Podaj adres e-mail: </span></label>
+                            <input class="form__field" type="email" name="email">
+                        </p>
+                        <p>
+                            <legend>Znasz tajne hasło?</legend>
+                            <label><span class="form__labelText">Podaj je:</span></label>
+                            <input class="form__field" type="password" name="password">
+                        </p>
+                        <p>
+                            <legend>Ile masz lat?</legend>
+                            <label>
+                                <span class="form__labelText"> Wiek:</span>
+
+                                <input class="form__field" type="number" name="age" min="18" max="120">
+                            </label>
+                        </p>
+                        <p>
+                            <legend>Podaj numer telefonu</legend>
+                            <label>
+                                <span class="form__labelText"> Telefon:</span>
+
+                                <input class="form__field" type="tel" name="tel" pattern="[0-9]{9}">
+                            </label>
+                        </p>
+                        <p>
+                            <legend>Twoja stronka</legend>
+                            <label>
+                                <span class="form__labelText"> Podaj adres Twojej stronki:</span>
+                                <input class="form__field" type="url" name="website">
+                            </label>
+                        </p>
+                        <p>
+                            <legend>Jakim samochodem jeździsz?</legend>
+                            <label>
+                                <span class="form__labelText"> Marka:</span>
+
+                                <input class="form__field" name="car" list="car">
+                                <datalist id="car">
+                                    <option>Mazda</option>
+                                    <option>Ford</option>
+                                    <option>Mercedes</option>
+                                    <option>BMW</option>
+                                </datalist>
+                            </label>
+                        </p>
+                        <p>
+                            <legend>Ocena</legend>
+                            <label>
+                                <span class="form__labelText"> Jak oceniasz moją stronę?</span>
+
+                                <input type="range" name="ocena" min="10" max="101">
+                            </label>
+                        </p>
+                        <p>
+                            <legend>Twój ulubiony kolor</legend>
+                            <label>
+                                <span class="form__labelText"> Wybierz kolor, który bardzo lubisz:<br>
+                                    (nie działa w IE)</span>
+                                <input class="form__field--color" type="color" name="kolor" value="#ffd32a">
+                            </label>
+                        </p>
+                        <p>
+                            <legend>Kiedy do mnie przyjedziesz?</legend>
+                            <label>
+                                <span class="form__labelText"> Data:</span>
+                                <input class="form__field js-date" name="data"> </label>
+                               <script>flatpickr(".js-date", {
+                                mode: "range"
+                            });</script>
+
+                        <button class="form__button">Wyślij!</button>
+                    </form>
+                </fieldset>
+            </section>
+            <section class="section" id="moje-osiagniecia">
+                <h2 class="scetion__h2"> Moje osiągnięcia: </h2>
+                <ol class="list orderedList">
+                    <li class="listItem">największa liczba przespanch godzin ciągiem: 11</li>
+                    <li class="listItem">najwięcej posprzątanych pomieszczeń jedno za drugim: 4</li>
+                    <li class="listItem">maksymalna temperatura: 38,5</li>
+                    <li class="listItem">najwięcej kroków w ciągu jednego dnia w 2020r.: 18 818</li>
+                </ol>
+
+            </section>
+            <button class="changeBackground">Zmien tło strony</button>
+
+
+
+            <section class="section" id="box">
+                <h2 class="scetion__h2">Taki box</h2>
+                <div class="element">
+                    <div class="subElement">A to najbardziej pstrokaty element. Testowałam na nim wszystko, o czym była
+                        mowa podczas kursu 😜</div>
+                </div>
+            </section>
+            <section class="section" id="tabela">
+                <h2 class="scetion__h2">Moja tabela</h2>
+
+                <table class="table">
+                    <caption class="table__caption">Ranking ciekawych miejsc</caption>
+                    <thead>
+                        <tr class="table__tableRow">
+                            <th class="table__cellHeader" scope="col">Obiekt</th>
+                            <th class="table__cellHeader" scope="col">Kraj</th>
+                            <th class="table__cellHeader" scope="col">Fota</th>
+                            <th class="table__cellHeader" scope="col">Odwiedzone</th>
+                            <th class="table__cellHeader" scope="col">Ocena</th>
+                            <th class="table__cellHeader" scope="col">Jeszcze raz?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table__tableRow">
+                            <th class="table__cellHeader" scope="row">Taj Mahal</th>
+                            <td class="table__cell">Indie</td>
+                            <td class="table__cell"><img src="images/tajmahal.jpg" alt="Taj Mahal"
+                                    class="table__tableImages"></td>
+                            <td class="table__cell">Nie</td>
+                            <td class="table__cell">-</td>
+                            <td class="table__cell">?</td>
+
+                        </tr>
+                        <tr class="table__tableRow">
+                            <th class="table__cellHeader" scope="row">Pomnik Chrystusa Odkupiciela</th>
+                            <td class="table__cell">Brazylia</td>
+                            <td class="table__cell"><img src="images/rio.jpg" alt="Rio" class="table__tableImages"></td>
+                            <td class="table__cell">Nie</td>
+                            <td class="table__cell">-</td>
+                            <td class="table__cell">?</td>
+                        </tr>
+                        <tr class="table__tableRow">
+                            <th class="table__cellHeader" scope="row">Morze Martwe</th>
+                            <td class="table__cell">Izrael</td>
+                            <td class="table__cell"><img src="images/morzemartwe.jpeg" alt="Morze Martwe"
+                                    class="table__tableImages">
+                            </td>
+                            <td class="table__cell">Tak</td>
+                            <td class="table__cell">9/10</td>
+                            <td class="table__cell">Tak</td>
+                        </tr>
+                        <tr class="table__tableRow">
+                            <th class="table__cellHeader" scope="row">Colloseum</th>
+                            <td class="table__cell">Włochy</td>
+                            <td class="table__cell"><img src="images/colloseum.jpeg" alt="Colloseum"
+                                    class="table__tableImages"></td>
+                            <td class="table__cell">Tak</td>
+                            <td class="table__cell">9/10</td>
+                            <td class="table__cell">Tak</td>
+                        </tr>
+                    </tbody>
+
+
+                    <tfoot>
+
+                    </tfoot>
+                </table>
+            </section>
+            <section class="section">
+                Szukaj w Googlu:
+                <form action="http://google.com/search">
+                    <input class="form__field" name="q">
+                    <button> Szukaj </button>
+
+                </form>
+
+            </section>
+
+
+
+
+        </mian>
+
+
+    </div>
+    <footer class="footer">© Inka 2020</footer>
+</body>
+
+</html>

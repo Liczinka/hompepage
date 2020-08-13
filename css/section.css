@@ -1,0 +1,12 @@
+.section {
+    padding: 30px;
+}
+.scetion__h2 {
+  
+        font-family: 'Pacifico', cursive;
+        color: #0fbcf9;
+    
+}
+.section__paragraph {
+    line-height: 1,5;
+}
