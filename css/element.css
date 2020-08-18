@@ -1,0 +1,14 @@
+.element {
+    text-align: center;
+    text-indent: 50px;
+    background-image: url("../images/joga.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+    text-transform: uppercase;
+}
+.eelement__decoration {
+    text-decoration-line: wavy;
+    text-decoration-color: teal;
+}
