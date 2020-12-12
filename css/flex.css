@@ -9,7 +9,6 @@
     background: teal;
     color: whitesmoke;
     margin: 10px;
-    flex-grow: 1;
     flex-basis: 10px; /*rozmiar elementu - jeśli flex-direction jest na column, to wysokość?  */
 }
 .flex__item--first {
