@@ -1,0 +1,21 @@
+.flex{
+    border: solid pink;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex__item{
+    padding: 20px;
+    background: teal;
+    color: whitesmoke;
+    margin: 10px;
+    flex-grow: 1;
+    flex-basis: 10px; /*rozmiar elementu - jeśli flex-direction jest na column, to wysokość?  */
+}
+.flex__item--first {
+    flex-grow: 1;
+} /*ile ma zabrać miejsca, które zostało (proporcjonlanie). Mozna dodać do wszystkich 1 i nie trzeba dodawać flex-basis*/
+.flex__item--last {
+    flex-grow: 1;
+    order: 1;
+}
